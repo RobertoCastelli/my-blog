@@ -18,16 +18,22 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const templates = {
     blogTemplate: path.resolve("src/templates/blogTemplate.js"),
+    filterTagTemplate: path.resolve("src/templates/filterTagTemplate.js"),
   }
   const res = await graphql(`
     query {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             fields {
               slug
             }
           }
+        }
+        totalCount
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
         }
       }
     }
@@ -40,6 +46,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
       component: templates.blogTemplate,
       context: {
         slug: edge.node.fields.slug,
+      },
+    })
+  })
+
+  const tags = res.data.allMarkdownRemark.group
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${tag.fieldValue}`,
+      component: templates.filterTagTemplate,
+      context: {
+        tag: tag.fieldValue,
       },
     })
   })

@@ -3,13 +3,13 @@ import Layout from "../components/Layout"
 import Helm from "../components/Helm"
 import { graphql } from "gatsby"
 
-const BlogTemplate = props => {
+const BlogTemplate = ({ data }) => {
   return (
     <div>
       <Layout>
         <Helm title="Post" />
         <div
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         ></div>
       </Layout>
     </div>
