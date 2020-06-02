@@ -1,14 +1,16 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Helm from "../components/Helm"
+import Layout from "../components/Layout"
 
-export default function Home() {
+const Tags = () => {
   return (
     <div>
+      <Helm title="tags" />
       <Layout>
-        <Helm title="Home" />
-        <h1>HOME PAGE</h1>
+        <h1>TAGS</h1>
       </Layout>
     </div>
   )
 }
+
+export default Tags
