@@ -1,7 +1,7 @@
 import React from "react"
 import Helm from "../components/Helm"
 import Layout from "../components/Layout"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 const Tags = () => {
   const data = useStaticQuery(graphql`
@@ -25,9 +25,11 @@ const Tags = () => {
         <ul>
           {data.allMarkdownRemark.group.map(tag => {
             return (
-              <li key={tag.fieldValue}>
-                {tag.fieldValue} <span>{tag.totalCount}</span>
-              </li>
+              <Link to={`/tags/${tag.fieldValue}`}>
+                <li key={tag.fieldValue}>
+                  {tag.fieldValue} <span>{tag.totalCount}</span>
+                </li>
+              </Link>
             )
           })}
         </ul>

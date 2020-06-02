@@ -22,7 +22,13 @@ const FilterTagTemplate = ({ data }) => {
                     />
                   </Link>
                   <ul>
-                    <li>{node.frontmatter.tags}</li>
+                    {node.frontmatter.tags.map(tag => {
+                      return (
+                        <Link to={`/tags/${tag}`}>
+                          <li>{tag}</li>
+                        </Link>
+                      )
+                    })}
                   </ul>
                 </li>
               )
