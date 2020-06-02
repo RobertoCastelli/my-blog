@@ -17,6 +17,7 @@ const Blog = () => {
             frontmatter {
               title
               date
+              tags
             }
           }
         }
@@ -40,6 +41,9 @@ const Blog = () => {
                       date={node.frontmatter.date}
                     />
                   </Link>
+                  <ul>
+                    <li>{node.frontmatter.tags}</li>
+                  </ul>
                 </li>
               )
             })}
