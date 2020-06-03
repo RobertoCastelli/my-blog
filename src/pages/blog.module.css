@@ -1,0 +1,38 @@
+.blog-list {
+  padding: 0;
+  margin: auto;
+  max-width: 500px;
+}
+
+.blog-item {
+  background-color: #f4f4f4;
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.blog-item:hover {
+  background-color: #e4e4e4;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.tag-item {
+  margin-right: 1rem;
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 0.3rem;
+  width: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.tag-item:hover {
+  color: white;
+  background-color: #333;
+}

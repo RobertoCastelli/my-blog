@@ -1,0 +1,15 @@
+.post-title {
+  font-weight: bold;
+}
+
+.post-date,
+.post-title,
+.post-intro {
+  padding: 1rem 0 0 1rem;
+}
+
+.post-date,
+.post-intro {
+  font-style: italic;
+  font-size: 0.8rem;
+}

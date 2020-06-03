@@ -13,7 +13,7 @@
 
 .nav-item:hover {
   color: cadetblue;
-  transform: scale(1.2);
+  font-weight: bold;
 }
 
 a {
