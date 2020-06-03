@@ -22,10 +22,10 @@ const FilterTagTemplate = ({ data }) => {
                     />
                   </Link>
                   <ul>
-                    {node.frontmatter.tags.map(tag => {
+                    {node.frontmatter.tags.map((tag, index) => {
                       return (
                         <Link to={`/tags/${tag}`}>
-                          <li>{tag}</li>
+                          <li key={index}>{tag}</li>
                         </Link>
                       )
                     })}

@@ -1,0 +1,21 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.nav-item {
+  color: #999;
+  margin-right: 15px;
+}
+
+.nav-item:hover {
+  color: cadetblue;
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,6 +1,8 @@
 import React from "react"
 import Helm from "../components/Helm"
 import Layout from "../components/Layout"
+import tagsStyle from "./tags.module.css"
+
 import { graphql, useStaticQuery, Link } from "gatsby"
 
 const Tags = () => {
@@ -18,16 +20,19 @@ const Tags = () => {
 
   return (
     <div>
-      <Helm title="tags" />
+      <Helm title="Tags" />
       <Layout>
         <h1>TAGS</h1>
-        <p>total posts: {data.allMarkdownRemark.totalCount}</p>
-        <ul>
+        <p className={tagsStyle.tagCounter}>
+          total posts: {data.allMarkdownRemark.totalCount}
+        </p>
+        <ul className={tagsStyle.tagList}>
           {data.allMarkdownRemark.group.map(tag => {
             return (
               <Link to={`/tags/${tag.fieldValue}`}>
-                <li key={tag.fieldValue}>
-                  {tag.fieldValue} <span>{tag.totalCount}</span>
+                <li key={tag.fieldValue} className={tagsStyle.tagItem}>
+                  {tag.fieldValue}{" "}
+                  <span className={tagsStyle.tagBadge}>{tag.totalCount}</span>
                 </li>
               </Link>
             )

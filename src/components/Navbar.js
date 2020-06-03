@@ -1,20 +1,21 @@
 import React from "react"
+import navStyle from "./navbar.module.css"
 import { Link } from "gatsby"
 
 const Navbar = () => {
   return (
     <div>
       <nav>
-        <p>LOGO</p>
-        <ul>
+        <p className={navStyle.navBrand}>LOGO</p>
+        <ul className={navStyle.navList}>
           <Link to="/">
-            <li>home</li>
+            <li className={navStyle.navItem}>home</li>
           </Link>
           <Link to="/blog">
-            <li>blog</li>
+            <li className={navStyle.navItem}>blog</li>
           </Link>
           <Link to="/tags">
-            <li>tags</li>
+            <li className={navStyle.navItem}>tags</li>
           </Link>
         </ul>
       </nav>
