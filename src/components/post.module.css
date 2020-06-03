@@ -1,11 +1,16 @@
 .post-title {
   font-weight: bold;
+  padding: 5px;
+}
+
+.post-date {
+  padding-top: 0.5rem;
 }
 
 .post-date,
 .post-title,
 .post-intro {
-  padding: 1rem 0 0 1rem;
+  padding-left: 1rem;
 }
 
 .post-date,
