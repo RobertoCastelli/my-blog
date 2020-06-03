@@ -20,8 +20,8 @@ const FilterTagTemplate = ({ data }) => {
                     <Post
                       title={node.frontmatter.title}
                       date={node.frontmatter.date}
-                      timeToRead={node.timeToRead}
                       intro={node.frontmatter.intro}
+                      timeToRead={node.timeToRead}
                     />
                   </Link>
                   <ul className={blogStyle.tagList}>
