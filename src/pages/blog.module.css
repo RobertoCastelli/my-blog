@@ -1,13 +1,13 @@
 .blog-list {
   padding: 0;
   margin: auto;
-  max-width: 500px;
+  width: 100%;
 }
 
 .blog-item {
   background-color: #f4f4f4;
   list-style-type: none;
-  margin-bottom: 1rem;
+  margin: 0 0.5rem 0.5rem 1rem;
 }
 
 .blog-item:hover {
@@ -23,6 +23,7 @@
 
 .tag-item {
   margin-right: 1rem;
+  margin-top: 0.5rem;
   background-color: cadetblue;
   border-radius: 10px;
   padding: 0.3rem;

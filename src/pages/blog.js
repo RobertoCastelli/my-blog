@@ -28,39 +28,37 @@ const Blog = () => {
   `)
 
   return (
-    <div>
-      <Layout>
-        <Helm title="Blog" />
+    <Layout>
+      <Helm title="Blog" />
 
-        <h1>POSTS</h1>
-        <ul className={blogStyle.blogList}>
-          {data.allMarkdownRemark.edges.map(({ node }) => {
-            return (
-              <li key={node.id} className={blogStyle.blogItem}>
-                <Link to={`/blog/${node.fields.slug}`}>
-                  <Post
-                    title={node.frontmatter.title}
-                    date={node.frontmatter.date}
-                    timeToRead={node.timeToRead}
-                  />
-                </Link>
-                <ul className={blogStyle.tagList}>
-                  {node.frontmatter.tags.map((tag, index) => {
-                    return (
-                      <Link to={`/tags/${tag}`}>
-                        <li key={index} className={blogStyle.tagItem}>
-                          {tag}
-                        </li>
-                      </Link>
-                    )
-                  })}
-                </ul>
-              </li>
-            )
-          })}
-        </ul>
-      </Layout>
-    </div>
+      <h1>POSTS</h1>
+      <ul className={blogStyle.blogList}>
+        {data.allMarkdownRemark.edges.map(({ node }) => {
+          return (
+            <li key={node.id} className={blogStyle.blogItem}>
+              <Link to={`/blog/${node.fields.slug}`}>
+                <Post
+                  title={node.frontmatter.title}
+                  date={node.frontmatter.date}
+                  timeToRead={node.timeToRead}
+                />
+              </Link>
+              <ul className={blogStyle.tagList}>
+                {node.frontmatter.tags.map((tag, index) => {
+                  return (
+                    <Link to={`/tags/${tag}`}>
+                      <li key={index} className={blogStyle.tagItem}>
+                        {tag}
+                      </li>
+                    </Link>
+                  )
+                })}
+              </ul>
+            </li>
+          )
+        })}
+      </ul>
+    </Layout>
   )
 }
 

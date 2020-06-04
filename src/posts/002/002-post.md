@@ -3,7 +3,11 @@ title: "002 - Resources"
 date: 02 August 2019
 tags: ["react", "tools", "javascript"]
 ---
->"You don't have to be great to start, but You have to start to be great - Zig Ziglar"
+
+![dune](../../images/dune.jpg)
+
+```You don't have to be great to start, but You have to start to be great - Zig Ziglar"
+```
 
 This is an evolving compendium of resources that helped me going on.
 I'll keep adding them whatever I find rilevant in this journey.

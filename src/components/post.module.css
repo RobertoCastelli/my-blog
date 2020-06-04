@@ -3,8 +3,9 @@
   padding: 5px;
 }
 
-.post-date {
+.post-info {
   padding-top: 0.5rem;
+  padding-right: 1rem;
 }
 
 .post-date,
@@ -13,8 +14,13 @@
   padding-left: 1rem;
 }
 
-.post-date,
+.post-info,
 .post-intro {
   font-style: italic;
   font-size: 0.8rem;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
 }

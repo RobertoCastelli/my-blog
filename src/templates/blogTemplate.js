@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Helm from "../components/Helm"
 import { graphql } from "gatsby"
+import blogStyle from "../pages/blog.module.css"
 
 const BlogTemplate = ({ data }) => {
   return (
@@ -9,6 +10,7 @@ const BlogTemplate = ({ data }) => {
       <Layout>
         <Helm title="Post" />
         <div
+          className={blogStyle.blogMarkdown}
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         ></div>
       </Layout>

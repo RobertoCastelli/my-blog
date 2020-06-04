@@ -3,7 +3,6 @@ import "./index.css"
 import Layout from "../components/Layout"
 import Helm from "../components/Helm"
 import { graphql, useStaticQuery } from "gatsby"
-
 import Img from "gatsby-image"
 
 export default function Home() {
