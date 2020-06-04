@@ -31,10 +31,25 @@ export default function Home() {
           alt="impostor"
         />
         <p className="index-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum
-          voluptas eaque necessitatibus nulla? Cum voluptatem, quod deleniti
-          saepe expedita numquam, dolorem facilis asperiores distinctio ipsam,
-          delectus libero reiciendis eum.
+          <code>
+            "Impostor syndrome is a psychological pattern in which an individual
+            doubts their accomplishments despite external evidence of their
+            competence"
+          </code>
+          <p>
+            Hi, my name is Roberto and I'm a 40 y.o. Project Manager. Since I
+            was a youngster I had a passion for programming languages. I
+            recently asked myself: why not bring into fruition my avid interest
+            in this field to enhance my career?{" "}
+          </p>
+          <p>
+            I began putting every possible effort to achieve this goal (and
+            still continuing to do so) once I decided to pursue this path. This
+            blog is a story in continuous evolution to keep track of my
+            progress, paths, errors, achievements in the hopes of helping other
+            people to share this adventure.
+          </p>
+          <p>Special thanks to Jaga Santagostino, my mentor.</p>
         </p>
       </Layout>
     </div>

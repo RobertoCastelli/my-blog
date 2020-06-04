@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
@@ -11,6 +11,10 @@ body {
 
 h1 {
   text-align: center;
+  color: #616161;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 6px 5px,
+    rgba(255, 255, 255, 0.4) 0 -4px 30px;
 }
 
 .index-content {
@@ -21,4 +25,14 @@ h1 {
 .index-image {
   display: block;
   margin: auto;
+  max-width: 300px;
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
 }

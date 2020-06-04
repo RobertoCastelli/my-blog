@@ -20,7 +20,6 @@ const Blog = () => {
               title
               date
               tags
-              intro
             }
           }
         }
@@ -42,7 +41,6 @@ const Blog = () => {
                   <Post
                     title={node.frontmatter.title}
                     date={node.frontmatter.date}
-                    intro={node.frontmatter.intro}
                     timeToRead={node.timeToRead}
                   />
                 </Link>
