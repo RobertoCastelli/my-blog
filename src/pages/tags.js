@@ -10,6 +10,7 @@ const Tags = () => {
     query {
       allMarkdownRemark {
         totalCount
+
         group(field: frontmatter___tags) {
           fieldValue
           totalCount
@@ -27,10 +28,10 @@ const Tags = () => {
           total posts: {data.allMarkdownRemark.totalCount}
         </p>
         <ul className={tagsStyle.tagList}>
-          {data.allMarkdownRemark.group.map(tag => {
+          {data.allMarkdownRemark.group.map((tag, index) => {
             return (
-              <Link to={`/tags/${tag.fieldValue}`}>
-                <li key={tag.fieldValue} className={tagsStyle.tagItem}>
+              <Link key={index} to={`/tags/${tag.fieldValue}`}>
+                <li className={tagsStyle.tagItem}>
                   {tag.fieldValue}{" "}
                   <span className={tagsStyle.tagBadge}>{tag.totalCount}</span>
                 </li>

@@ -7,6 +7,8 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  overflow-y: scroll;
+  font-size: 0.9rem;
 }
 
 h1 {

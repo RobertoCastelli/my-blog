@@ -20,6 +20,7 @@ const Blog = () => {
               title
               date
               tags
+              intro
             }
           }
         }
@@ -40,16 +41,15 @@ const Blog = () => {
                 <Post
                   title={node.frontmatter.title}
                   date={node.frontmatter.date}
+                  intro={node.frontmatter.intro}
                   timeToRead={node.timeToRead}
                 />
               </Link>
               <ul className={blogStyle.tagList}>
                 {node.frontmatter.tags.map((tag, index) => {
                   return (
-                    <Link to={`/tags/${tag}`}>
-                      <li key={index} className={blogStyle.tagItem}>
-                        {tag}
-                      </li>
+                    <Link key={index} to={`/tags/${tag}`}>
+                      <li className={blogStyle.tagItem}>{tag}</li>
                     </Link>
                   )
                 })}

@@ -1,24 +1,26 @@
 .blog-list {
+  list-style-type: none;
   padding: 0;
-  margin: auto;
-  width: 100%;
 }
 
 .blog-item {
   background-color: #f4f4f4;
-  list-style-type: none;
   margin: 0 0.5rem 0.5rem 1rem;
+  padding: 0 0 0.5rem 0;
 }
 
 .blog-item:hover {
   background-color: #e4e4e4;
 }
 
+.blog-markdown {
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  padding: 0.8rem;
+  padding-left: 1rem;
 }
 
 .tag-item {

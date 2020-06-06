@@ -1,23 +1,19 @@
 ---
 title: "001 - Planning"
-date: 01 August 2019 
+date: August 01, 2019 
+intro: "Plans are worthless. Planning is essential. ~ Dwight D. Eisenhower"
 tags: ["javascript", "generic"]
 ---
 
 ![dune](../../images/dune.jpg)
 
-```
-"Plans are worthless. Planning is essential. ~ Dwight D. Eisenhower" 
-```
+**SETTING THE GOALS**
 
-## SETTING THE GOAL
+- Transforming passion in my daily job  
+- Become a web developer full-stack at 42 years old
 
-Transforming passion in my daily job
-Become a web developer full-stack at 42 years old
-
-
-## TO-DO LIST
-***what I have to master to achieve my goal***
+**TO-DO LIST**
+*what I have to master to achieve my goal*
 
 - Javascript (HTML/CSS)
 - React 
@@ -30,9 +26,8 @@ Become a web developer full-stack at 42 years old
 - Markdown
 - Python (Django, Flask, etc)
 
-
-## TO-BE LIST
-***what I have to do to become what I want***
+**TO-BE LIST**
+*what I have to do to become what I want*
 
 - Buy a domain
 - Make a Site
@@ -43,4 +38,4 @@ Become a web developer full-stack at 42 years old
 - Create a logo
 - Learn, learn, learn and learn
 
-Stay tuned! :octocat:
+Stay tuned! 
