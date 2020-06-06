@@ -27,10 +27,8 @@ const FilterTagTemplate = ({ data }) => {
                   <ul className={blogStyle.tagList}>
                     {node.frontmatter.tags.map((tag, index) => {
                       return (
-                        <Link to={`/tags/${tag}`}>
-                          <li key={index} className={blogStyle.tagItem}>
-                            {tag}
-                          </li>
+                        <Link key={index} to={`/tags/${tag}`}>
+                          <li className={blogStyle.tagItem}>{tag}</li>
                         </Link>
                       )
                     })}
