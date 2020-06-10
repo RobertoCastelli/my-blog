@@ -33,11 +33,11 @@ export default function Home() {
         </Link>
 
         <div className="index-content">
-          <code>
+          <i>
             "Impostor syndrome is a psychological pattern in which an individual
             doubts their accomplishments despite external evidence of their
             competence"
-          </code>
+          </i>
           <p>
             Hi, my name is Roberto and I'm a 40 y.o. Project Manager. Since I
             was a youngster I had a passion for programming languages. I
@@ -51,7 +51,7 @@ export default function Home() {
             progress, paths, errors, achievements in the hopes of helping other
             people to share this adventure.
           </p>
-          <p>Special thanks to Daniele Di Lucido & Jaga Santagostino</p>
+          <p>Special thanks to Daniele Di Lucido & Jaga Santagostino.</p>
         </div>
       </Layout>
     </div>

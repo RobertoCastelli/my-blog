@@ -38,4 +38,5 @@ tags: ["javascript", "generic"]
 - Create a logo
 - Learn, learn, learn and learn
 
-Stay tuned! 
+Stay tuned!   
+***Roberto***

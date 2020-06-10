@@ -5,6 +5,8 @@ intro: "This is an evolving compendium of resources that helped me going on. I'l
 tags: ["react", "tools", "javascript"]
 ---
 
+![dune](../../images/dune.jpg)
+
 TOOLS
 - **VS Codium** - IDE freely-licensed binary distribution of Microsoft’s editor VSCode
 - **Github** - a code hosting platform for version control and collaboration
@@ -38,3 +40,4 @@ BOOKS
 - **Eloquent JavaScript** - a Modern Introduction to Programming - Marijn Haverbeke
 
 Stay Tuned!
+***Roberto***
