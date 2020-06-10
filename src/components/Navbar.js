@@ -32,14 +32,26 @@ const Navbar = () => {
         />
       </a>
       <ul className={navStyle.navList}>
-        <Link to="/">
-          <li className={navStyle.navItem}>home</li>
+        <Link
+          className={navStyle.navItem}
+          activeClassName={navStyle.activeNavItem}
+          to="/"
+        >
+          <li>home</li>
         </Link>
-        <Link to="/blog">
-          <li className={navStyle.navItem}>blog</li>
+        <Link
+          className={navStyle.navItem}
+          activeClassName={navStyle.activeNavItem}
+          to="/blog"
+        >
+          <li>blog</li>
         </Link>
-        <Link to="/tags">
-          <li className={navStyle.navItem}>tags</li>
+        <Link
+          className={navStyle.navItem}
+          activeClassName={navStyle.activeNavItem}
+          to="/tags"
+        >
+          <li>tags</li>
         </Link>
       </ul>
     </nav>

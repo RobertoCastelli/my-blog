@@ -1,27 +1,29 @@
 ---
-title: "tre"
-date: 3/1/2020
+title: "TEST TRE"
+date: 03/08/2019
 intro: "Motivation is what gets you started, but it's the habits that keep you going. - Jim Rohn"
 tags: ["ciao", "gatsby"]
 ---
+
+![dune](../../images/dune.jpg)
 
 Here I will list all the projects I am planning to realize. I will update this post often.  
 All the code will be accessible in my GITHUB repository.  
 All the demo are accessible at my SITE.
 
 ## JS
-Chat room 
-Game of life -  done! 01/06/2019
-Drum Machine -  done! 15/06/2019
-To-Do List -  done!01/07/2019
-Simple Paint -  done! 15/07/2019
-Budget Buddy -  done! 01/08/2019
-ol' style RPG -  done! 15/09/2019
-Quiz game -  done! 30/09/2019
-Countdown 2021 -  done! 10/11/2019
-Fix-it app -  done!  15/11/2019
-Rock-paper-scissors - done! 22/11/2019
-Pomodoro clock -  done! 27/11/2019
+- Chat room 
+- Game of life -  done! 01/06/2019
+- Drum Machine -  done! 15/06/2019
+- To-Do List -  done!01/07/2019
+- Simple Paint -  done! 15/07/2019
+- Bud get Buddy -  done! 01/08/2019
+- ol' style RPG -  done! 15/09/2019
+- Quiz game -  done! 30/09/2019
+- Countdown 2021 -  done! 10/11/2019
+- Fix-it app -  done!  15/11/2019
+- Rock-paper-scissors - done! 22/11/2019
+- Pomodoro clock -  done! 27/11/2019
 
 ## JS w/ API
 - League of legends 

@@ -1,6 +1,6 @@
 ---
 title: "PLANNING"
-date: August 01, 2019 
+date: 01/08/2019
 intro: "Plans are worthless. Planning is essential. ~ Dwight D. Eisenhower"
 tags: ["javascript", "generic"]
 ---

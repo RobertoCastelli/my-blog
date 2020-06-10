@@ -39,7 +39,7 @@ export default function Home() {
             competence"
           </i>
           <p>
-            Hi, my name is Roberto and I'm a 40 y.o. Project Manager. Since I
+            Hi, my name is Roberto and I'm a 42 y.o. Project Manager. Since I
             was a youngster I had a passion for programming languages. I
             recently asked myself: why not bring into fruition my avid interest
             in this field to enhance my career?
@@ -51,7 +51,9 @@ export default function Home() {
             progress, paths, errors, achievements in the hopes of helping other
             people to share this adventure.
           </p>
-          <p>Special thanks to Daniele Di Lucido & Jaga Santagostino.</p>
+          <p>
+            Special thanks to Daniele Di Lucido & Jaga Santagostino, my mentor.
+          </p>
         </div>
       </Layout>
     </div>

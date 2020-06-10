@@ -1,6 +1,6 @@
 ---
 title: "RESOURCES"
-date: August 02, 2019
+date:  02/08/2019
 intro: "This is an evolving compendium of resources that helped me going on. I'll keep adding them whatever I find rilevant in this journey."
 tags: ["react", "tools", "javascript"]
 ---

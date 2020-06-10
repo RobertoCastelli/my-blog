@@ -11,6 +11,10 @@
   margin-right: 15px;
 }
 
+.active-nav-item {
+  color: cadetblue;
+}
+
 .nav-item:hover {
   color: cadetblue;
   font-weight: bold;
